@@ -24,7 +24,7 @@ async function getSignedCreditScore(userId) {
   const knownCreditScore = (userId) => (userId === "1" ? 787 : 536);
 
   // We compute the public key associated with our private key
-  const publicKey = privateKey.toPublicKey();
+  const publicKey = privateKey.toPublicKey().toBase58();
 
   // Define a Field with the value of the users id
   const id = Field(userId);
