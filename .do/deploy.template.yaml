@@ -6,3 +6,11 @@ spec:
         branch: main
         repo_clone_url: https://github.com/jackryanservia/mina-credit-score-signer.git
       name: mina-credit-score-signer
+          http_port: 8080
+      instance_count: 1
+      instance_size_slug: basic-xs
+      name: mina-credit-score-signer
+      routes:
+        - path: /
+      run_command: npm start
+      source_dir: /
