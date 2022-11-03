@@ -3,9 +3,8 @@ spec:
   region: nyc
   services:
     - environment_slug: node-js
-      github:
+      git:
         branch: main
-        deploy_on_push: true
         repo_clone_url: https://github.com/jackryanservia/mina-credit-score-signer.git
       http_port: 8080
       instance_count: 1
